@@ -21,7 +21,7 @@ export default function Loader() {
   return (
     <div className="flex items-center justify-center w-full h-[100vh] bg-primary text-white">
       <div className="">
-        <Image src="/vanikasLogo.svg" width={500} height={100}/>
+        <Image src="/vanikasLogo.svg" width={500} height={100} alt="Brand Logo"/>
       </div>
     </div>
   );
