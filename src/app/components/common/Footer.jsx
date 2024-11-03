@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
@@ -29,13 +31,13 @@ export default function Footer() {
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>Skin Care</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>Body Care</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>Events</span></li>
-                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>Locate Us</span></li>
+                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all' onClick={openLocationInGoogleMaps}>Locate Us</span></li>
                 </ul>
             </div>
             <div>
                 <h4 className='mb-4 text-[16px] font-semibold'>Address</h4>
                 <ul className='text-[14px] flex flex-col font-light'>
-                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>H\b\71, Main B Road, <br/> Opposite Hari Kangan, <br/> Near Bijlighar, Bjs, Gali No. 11, <br/> Jodhpur, Rajasthan 342001</span></li>
+                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all' onClick={openLocationInGoogleMaps}>H\b\71, Main B Road, <br/> Opposite Hari Kangan, <br/> Near Bijlighar, Bjs, Gali No. 11, <br/> Jodhpur, Rajasthan 342001</span></li>
                 </ul>
             </div>
             <div>

@@ -40,6 +40,14 @@ export default function Header() {
         setMenuStatus(!menuStatus)
     }
 
+    const openLocationInGoogleMaps = () => {
+        const latitude = 26.036669;  // Replace with your location's latitude
+        const longitude = 73.0566243; // Replace with your location's longitude
+        // const googleMapsURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+        const googleMapsURL = `https://maps.app.goo.gl/S796T8u7HGekEuWW8`;
+        window.open(googleMapsURL, '_blank');
+    }
+
     return (
         <>
         <header className='px-14 py-8 flex items-center lg:justify-between justify-center text-white absolute z-[99] w-[100%]'>
@@ -72,7 +80,7 @@ export default function Header() {
             <ul className='text-center py-[50px] grid grid-cols place-items-center place-content-center h-full'>
                 {menus.map((item)=>{
                     return(
-                        <li key={item.id} className='my-[20px] text-primary'>{item.label}</li>
+                        <li key={item.id} className='my-[20px] text-primary' onClick={item.id === "location" ? openLocationInGoogleMaps : null}>{item.label}</li>
                     )})}
             </ul>
         </div>
