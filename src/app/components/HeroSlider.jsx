@@ -105,7 +105,8 @@ export default function HeroSlider() {
             <RxCrossCircled className={cross?"hidden":'bg-white rounded-full cursor-pointer'} onClick={()=>close()}/>
           </div> */}
           <div className='w-[52px] h-[52px] rounded-full bg-[#00e785] shadow-[4px_5px_10px_rgba(0,0,0,0.4)] grid grid-cols place-items-center'>
-          <FaWhatsapp className='text-[35px] text-white cursor-pointer' onClick={() => window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank')}/>
+          {/* <FaWhatsapp className='text-[35px] text-white cursor-pointer' onClick={() => window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank')}/> */}
+          <FaWhatsapp className='text-[35px] text-white cursor-pointer'/>
           </div>
         </div>
       </div>
