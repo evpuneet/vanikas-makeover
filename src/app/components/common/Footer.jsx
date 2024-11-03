@@ -16,8 +16,8 @@ export default function Footer() {
                 </ul>
             </div>
             <div>
-                <h4 className='mb-4 text-[16px] font-semibold'>Our Services</h4>
-                <ul className='text-[14px] flex flex-col font-light'>
+                <h4 className='mb-4 text-[16px] font-semibold text-right lg:text-left'>Our Services</h4>
+                <ul className='text-[14px] flex flex-col font-light text-right lg:text-left'>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>Hair Care</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>Skin Care</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>Body Care</span></li>
@@ -32,10 +32,10 @@ export default function Footer() {
                 </ul>
             </div>
             <div>
-                <h4 className='mb-4 text-[16px] font-semibold'>Get in Touch</h4>
-                <ul className='text-[14px] flex flex-col font-light'>
-                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all flex items-center gap-1'><RiInstagramFill />Instagram</span></li>
-                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all flex items-center gap-1'><FaFacebook />Facebook</span></li>
+                <h4 className='mb-4 text-[16px] font-semibold text-right lg:text-left'>Get in Touch</h4>
+                <ul className='text-[14px] flex flex-col font-light text-right lg:text-left'>
+                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all flex items-center justify-end lg:justify-start gap-1'><RiInstagramFill />Instagram</span></li>
+                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all flex items-center justify-end lg:justify-start gap-1'><FaFacebook />Facebook</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>+91 98944866</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>care@vanikkas.in</span></li>
                 </ul>

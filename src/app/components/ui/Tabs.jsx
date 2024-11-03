@@ -29,7 +29,7 @@ export default function Tabs() {
 
   return (
     <div>
-      <div className="flex justify-end gap-8 sm:text-[13px] lg:text-[16px]">
+      <div className="flex justify-end gap-8 text-[13px] lg:text-[16px]">
         {tabs.map((tab) => (
           <h5
             key={tab.id}
