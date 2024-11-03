@@ -34,7 +34,7 @@ export default function Header() {
         }
     ];
 
-    let [menuStatus, setMenuStatus] = useState(false)
+    let [menuStatus, setMenuStatus] = useState(true)
 
     let menuBtn=()=>{
         setMenuStatus(!menuStatus)

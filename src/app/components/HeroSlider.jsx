@@ -10,10 +10,10 @@ import { Autoplay, Scrollbar } from 'swiper/modules';
 import { FaWhatsapp } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
 export default function HeroSlider() {
-  let [cross, setCross] = useState(false)
-  let close=()=>{
-    setCross(true)
-  }
+  // let [cross, setCross] = useState(false)
+  // let close=()=>{
+  //   setCross(true)
+  // }
   return (
     <>
       <div className='relative'>

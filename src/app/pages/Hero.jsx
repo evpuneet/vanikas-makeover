@@ -10,11 +10,11 @@ export default function Hero() {
   return (
     <>
         <Header />
-        {/* <HeroSlider/>
+        <HeroSlider/>
         <OurServices/>
         <Bridal/>
         <CustomerTree/>
-        <Footer/> */}
+        <Footer/>
     </>
   )
 }
