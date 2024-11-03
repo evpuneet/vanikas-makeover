@@ -36,7 +36,7 @@ export default function Footer() {
                 <ul className='text-[14px] flex flex-col font-light'>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all flex items-center gap-1'><RiInstagramFill />Instagram</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all flex items-center gap-1'><FaFacebook />Facebook</span></li>
-                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>+91 9894154866</span></li>
+                    <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>+91 98944866</span></li>
                     <li className='cursor-pointer '><span className='hover:underline underline-offset-2 transition-all'>care@vanikkas.in</span></li>
                 </ul>
             </div>
