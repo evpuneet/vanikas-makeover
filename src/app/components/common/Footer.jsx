@@ -5,8 +5,8 @@ export default function Footer() {
     const openLocationInGoogleMaps = () => {
         const latitude = 26.036669;  // Replace with your location's latitude
         const longitude = 73.0566243; // Replace with your location's longitude
-        const googleMapsURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
-        // const googleMapsURL = `https://maps.app.goo.gl/S796T8u7HGekEuWW8`;
+        // const googleMapsURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+        const googleMapsURL = `https://maps.app.goo.gl/S796T8u7HGekEuWW8`;
         window.open(googleMapsURL, '_blank');
     }
   return (
