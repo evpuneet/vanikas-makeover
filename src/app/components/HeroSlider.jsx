@@ -96,7 +96,7 @@ export default function HeroSlider() {
             </p>
           </div>
         </div>
-        <div className=' fixed right-[20] bottom-[20] flex flex-col items-end z-[999999]'>
+        <div className=' fixed right-[20px] bottom-[20px] z-[999999]'>
 
           {/* we will use this feature in future */}
 
