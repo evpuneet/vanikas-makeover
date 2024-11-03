@@ -67,7 +67,7 @@ export default function Header() {
             </div>
             
         </header>
-        <div className={menuStatus?'bg-white text-black h-[100vh] w-full z-[999] relative -translate-x-[100%] transition-all duration-1000':"bg-white text-black h-[100vh] w-full z-[999] relative -translate-x-[0%] transition-all duration-1000'"}>
+        <div className={menuStatus?'lg:hidden block bg-white text-black h-[100vh] w-full z-[999] relative -translate-x-[100%] transition-all duration-1000':"lg:hidden block bg-white text-black h-[100vh] w-full z-[999] relative -translate-x-[0%] transition-all duration-1000'"}>
         <RxCross1 className='absolute right-[50px] top-[50px] text-primary font-medium' onClick={menuBtn}/>
             <ul className='text-center py-[50px] grid grid-cols place-items-center place-content-center h-full'>
                 {menus.map((item)=>{
