@@ -5,6 +5,7 @@ import HeroSlider from '../components/HeroSlider'
 import OurServices from '../components/OurServices'
 import Bridal from '../components/Bridal'
 import CustomerTree from '../components/CustomerTree'
+import MeetOurOwner from '../components/MeetOurOwner'
 
 export default function Hero() {
   return (
@@ -14,6 +15,7 @@ export default function Hero() {
         <OurServices/>
         <Bridal/>
         <CustomerTree/>
+        <MeetOurOwner/>
         <Footer/>
     </>
   )

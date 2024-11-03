@@ -46,12 +46,12 @@ export default function Tabs() {
           activeTab === tab.id && (
             <div key={tab.id} className="mb-8">
               <p className="lg:text-[16px] text-[14px] mb-4 duration-500 transition-all h-auto">{tab.content}</p>
-              <button
-                tel="54651635155"
+              <a
+                href="tel:54651635155"
                 className="bg-white rounded px-4 py-2 text-primary text-[12px] font-semibold "
               >
                 Book Now
-              </button>
+              </a>
             </div>
           )
         ))}

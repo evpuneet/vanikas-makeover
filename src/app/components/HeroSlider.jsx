@@ -14,13 +14,27 @@ export default function HeroSlider() {
   // let close=()=>{
   //   setCross(true)
   // }
+
+  const phoneNumber = '918696878228'; // Replace with your WhatsApp number
+  const message = 'Hello! I am interested in learning more about your services.'; // Customize your message here
+  const encodedMessage = encodeURIComponent(message);
+
+  const openLocationInGoogleMaps = () => {
+    const latitude = 26.036669;  // Replace with your location's latitude
+    const longitude = 73.0566243; // Replace with your location's longitude
+    const googleMapsURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+    // const googleMapsURL = `https://maps.app.goo.gl/S796T8u7HGekEuWW8`;
+  
+    window.open(googleMapsURL, '_blank');
+  };
+
   return (
     <>
       <div className='relative'>
         <Swiper
           scrollbar={{ hide: true }}
           autoplay={{
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Scrollbar]}
@@ -41,7 +55,7 @@ export default function HeroSlider() {
                   <button className='bg-white text-primary text-[16px] lg:px-4 px-2 lg:py-2 py-1 rounded-lg'>
                     Book Appointment
                   </button>
-                  <button className='text-[16px] lg:px-4 px-2 lg:py-2 py-1 rounded-lg border flex items-center gap-2 hover:shadow'>
+                  <button className='text-[16px] lg:px-4 px-2 lg:py-2 py-1 rounded-lg border flex items-center gap-2 hover:shadow' onClick={openLocationInGoogleMaps}>
                     Salon Locator <IoLocation className='text-[16px]' />
                   </button>
                 </div>
@@ -58,7 +72,11 @@ export default function HeroSlider() {
           </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='w-[100%] h-[100vh] md:bg-banner-2 bg-banner-m-2 bg-no-repeat bg-cover '></div>
+            <div className='w-[100%] h-[100vh] md:bg-banner-2 bg-banner-m-2 bg-no-repeat bg-cover relative'>
+            <button className='bg-white text-primary text-[16px] lg:px-4 px-2 lg:py-2 py-1 md:bottom-[150px] lg:left-[10%] rounded-lg absolute bottom-[90px] left-[50%] translate-x-[-50%]'>
+              Book Appointment
+            </button>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -87,7 +105,7 @@ export default function HeroSlider() {
             <RxCrossCircled className={cross?"hidden":'bg-white rounded-full cursor-pointer'} onClick={()=>close()}/>
           </div> */}
           <div className='w-[52px] h-[52px] rounded-full bg-[#00e785] shadow-[4px_5px_10px_rgba(0,0,0,0.4)] grid grid-cols place-items-center'>
-          <FaWhatsapp className='text-[35px] text-white cursor-pointer' />
+          <FaWhatsapp className='text-[35px] text-white cursor-pointer' onClick={() => window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank')}/>
           </div>
         </div>
       </div>

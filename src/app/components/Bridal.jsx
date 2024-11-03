@@ -35,7 +35,7 @@ export default function Bridal() {
         <div className='h-full grid grid-cols-1 items-center'>
           <div className='text-primary'>
             <h4 className='text-[40px] font-Forum'>Why Choose Us?</h4>
-            <p className='text-[16px] mb-[10px]'>
+            <p className='text-[16px] md:mb-[10px] mb-[30px]'>
               With 24 years of experience, Vanikka&apos;s offers the benefit of
               over two decades of expertise in the beauty industry. Our
               personalized services are tailored to meet your unique needs

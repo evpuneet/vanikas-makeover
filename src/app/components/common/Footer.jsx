@@ -2,6 +2,13 @@ import React from 'react'
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
 export default function Footer() {
+    const openLocationInGoogleMaps = () => {
+        const latitude = 26.036669;  // Replace with your location's latitude
+        const longitude = 73.0566243; // Replace with your location's longitude
+        const googleMapsURL = `https://www.google.com/maps?q=${latitude},${longitude}`;
+        // const googleMapsURL = `https://maps.app.goo.gl/S796T8u7HGekEuWW8`;
+        window.open(googleMapsURL, '_blank');
+    }
   return (
     <>
         <footer className='grid lg:grid-cols-4 grid-cols-2 gap-x-4 gap-y-6 bg-[#6d0000] text-white py-8 lg:px-14 px-8'>
