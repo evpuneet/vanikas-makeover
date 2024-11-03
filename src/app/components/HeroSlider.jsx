@@ -43,7 +43,7 @@ export default function HeroSlider() {
               </div>
               <div className='ps-[40px] md:ps-0'>
                 <Image 
-                  src="https://naturals.in/assets/banner_girl.png" 
+                  src="/assets/banner_girl.png" 
                   alt="A woman at the salon" // Provide descriptive alt text
                   width={600} // Set appropriate width
                   height={400} // Set appropriate height
