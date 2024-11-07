@@ -49,8 +49,7 @@ export default function MeetOurOwner() {
           <div>
             <h4 className="mb-[10px]">Follow Us On</h4>
             <div className="flex justify-center gap-[30px]">
-              <span className="hover:underline underline-offset-2 transition-all flex items-center justify-end lg:justify-start gap-1 cursor-pointer"><RiInstagramFill />Instagram</span>
-              <span className="hover:underline underline-offset-2 transition-all flex items-center justify-end lg:justify-start gap-1 cursor-pointer"><FaFacebook />Facebook</span>
+              <a href='https://www.instagram.com/vanikkas14' className="hover:underline underline-offset-2 transition-all flex items-center justify-end lg:justify-start gap-1 cursor-pointer"><RiInstagramFill />Instagram</a>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef} from 'react';
 import Tabs from './ui/Tabs';
 import Image from 'next/image';
 import gsap from 'gsap';
@@ -71,14 +71,14 @@ export default function OurServices() {
 
   return (
     <>
-      <section className='h-[430px] grid md:grid-cols-[30%_auto] grid-cols-1 md:gap-[300px] md:px-14 px-4 lg:pe-[200px] text-white mb-8'>
+      <section className='h-[430px] grid md:grid-cols-[30%_auto] grid-cols-1 md:gap-[300px] md:px-14 px-4 lg:pe-[200px] text-white mb-8 overflow-clip'>
         <div className='relative'>
           <Image 
             src="/assets/services_women_v2.png" 
             alt="Services for Women" 
-            layout="responsive"
             width={400}
             height={300}
+            layout='responsive'
             className='absolute md:bottom-[47px] bottom-[-530px] scale-50 md:scale-150 md:left-[60px] left-[-30] transition-all'
             ref={imageRef} // Ref for the image
           />

@@ -1,18 +1,10 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { animate, motion } from 'framer-motion';
-// import avatar1 from "/assets/avatar-1.png";
-// import avatar2 from "/assets/avatar-2.png";
-// import avatar3 from "/assets/avatar-3.png";
-// import avatar4 from "/assets/avatar-4.png";
-// import avatar5 from "/assets/avatar-5.png";
-// import avatar6 from "/assets/avatar-6.png";
-// import avatar7 from "/assets/avatar-7.png";
-// import avatar8 from "/assets/avatar-8.png";
-// import avatar9 from "/assets/avatar-9.png";
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
+import gsap from 'gsap';
 
 const testimonials = [
   {
@@ -62,6 +54,8 @@ const testimonials = [
   },
 ];
 
+
+
 const TestimonialsColumn = ({ className, testimonials, duration }) => (
   <motion.div 
     animate={{
@@ -97,13 +91,30 @@ const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
 const thirdColumn = testimonials.slice(6, 9);
 
+
+
 export default function Testimonials() {
+    const titleRef = useRef(null);
+    useEffect(() => {
+        // Title Animation (from right)
+        gsap.from(titleRef.current, {
+          x: 100,
+          opacity: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: titleRef.current,
+            start: "top 80%", // Adjust start position
+            toggleActions: "play none none reverse",
+          },
+        });
+    }, []);
+
   return (
     <section className="bg-white py-12">
       <div className="">
         <div className="section-heading">
-          <h2 className="section-title my-5 hidden md:block">What our customers say</h2>
-          <h2 className="section-title my-5 py-2 text-[50px] md:hidden">Customer Feedback</h2>
+          <h2 className="section-title my-5 hidden md:block" ref={titleRef}>What our customers say</h2>
+          <h2 className="section-title my-5 py-2 text-[50px] md:hidden" ref={titleRef}>Customer Feedback</h2>
         </div>
         <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] mt-10 max-h-[738px] overflow-clip">
           <TestimonialsColumn testimonials={firstColumn} duration={12} />
