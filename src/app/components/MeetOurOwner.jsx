@@ -18,16 +18,16 @@ export default function MeetOurOwner() {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 40%",
+        start: "top 60%",
         end: "bottom 40%",
         toggleActions: "play none none reverse",
       }
     });
 
     timeline
-      .from(imageRef.current, { opacity: 0, y: 50, duration: 1 })
-      .from(nameRef.current, { opacity: 0, y: 30, duration: 0.8 }, "-=0.5")
-      .from(descRef.current, { opacity: 0, y: 20, duration: 0.8 }, "-=0.5");
+      .from(imageRef.current, { opacity: 0, y: 50, duration: 0.5 })
+      .from(nameRef.current, { opacity: 0, y: 30, duration: 0.3 }, "-=0.5")
+      .from(descRef.current, { opacity: 0, y: 20, duration: 0.3 }, "-=0.5");
 
     return () => {
       if (timeline.scrollTrigger) timeline.scrollTrigger.kill();

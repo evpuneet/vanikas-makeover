@@ -66,7 +66,7 @@ export default function HeroSlider() {
     );
   }, []);
 
-  const phoneNumber = '918696878228';
+  const phoneNumber = '917877446041';
   const message = 'Hello! I am interested in learning more about your services.';
   const encodedMessage = encodeURIComponent(message);
 
@@ -138,6 +138,41 @@ export default function HeroSlider() {
         </Swiper>
       </div>
       {/* Additional content here */}
+      <div className='relative h-[200px]'>
+        <div className='bg-white rounded-[80px_80px_0_0] py-6 lg:px-[200px] absolute top-[100px] w-[100%] -translate-y-[60%] z-[10] grid lg:grid-cols-2 grid-cols-1'>
+          <div className='hidden md:block'></div>
+          <div className='lg:text-right text-center text-primary'>
+            <h4 className='section-title text-right lg:py-5 pb-3 pe-3 lg:pe-1 hidden md:block'>Why Choose Us?</h4>
+            <h4 className='section-title text-center lg:py-5 py-3 pb-6 pe-3 lg:pe-1 md:hidden text-[50px]'>Why Choose Us?</h4>
+            <p className='lg:text-[16px] text-[14px] md:px-[0px] px-[20px]'>
+              With 24 years of experience, Vanikka&apos;s offers the benefit of
+              over two decades of expertise in the beauty industry. Our
+              personalized services are tailored to meet your unique needs
+              and preferences, ensuring that you receive the care and
+              attention you deserve. We are committed not to compromise
+              quality, using only the highest quality premium products to
+              provide exceptional care.
+            </p>
+          </div>
+        </div>
+
+          {/* whatsapp icon */}
+
+        <div className=' fixed right-[20px] bottom-[20px] z-[999999]'>
+
+          {/* we will use this feature in future */}
+
+          {/* <div className=' h-[50px] mb-[10px] flex items-center gap-2'>
+            <div className={cross?"hidden":text-[12px] py-[8px] px-[16px] shadow-[2px_3px_0_#00e785] text-nowrap text-[#202020] border-[#363636] border-[1px] rounded-[24px] leading-[150%] font-medium bg-white}>Book your Appointment</div>
+            <RxCrossCircled className={cross?"hidden":'bg-white rounded-full cursor-pointer'} onClick={()=>close()}/>
+          </div> */}
+          <div className='w-[52px] h-[52px] rounded-full bg-[#00e785] shadow-[4px_5px_10px_rgba(0,0,0,0.4)] flex justify-center items-center'>
+          <FaWhatsapp className='text-[35px] text-white cursor-pointer' 
+          onClick={() => window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank')}/>
+          {/* <FaWhatsapp className='text-[35px] text-white cursor-pointer'/> */}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
