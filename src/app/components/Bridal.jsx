@@ -59,7 +59,7 @@ export default function Bridal() {
           <div ref={textRef} className='px-[130px] text-primary'>
             <h4 className='section-title text-left py-5'>Bridal</h4>
             <p className='text-[16px] mb-[10px]'>
-              With 24 years of experience, Vanikka's offers the benefit of over two decades of expertise in the beauty industry. Our personalized services are tailored to meet your unique needs and preferences, ensuring that you receive the care and attention you deserve. We are committed to uncompromised quality, using only the highest quality premium products to provide exceptional care.
+              With 24 years of experience, Vanikka&apos;s offers the benefit of over two decades of expertise in the beauty industry. Our personalized services are tailored to meet your unique needs and preferences, ensuring that you receive the care and attention you deserve. We are committed to uncompromised quality, using only the highest quality premium products to provide exceptional care.
             </p>
             <a href="tel:54651635165" className='text-nowrap bg-primary rounded-[5px] text-white px-4 py-2 text-[14px] font-semibold'>Book Now</a>
           </div>
