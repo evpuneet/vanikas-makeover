@@ -18,8 +18,8 @@ export default function MeetOurOwner() {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 80%",
-        end: "bottom 60%",
+        start: "top 40%",
+        end: "bottom 40%",
         toggleActions: "play none none reverse",
       }
     });
