@@ -56,6 +56,7 @@ export default function Header() {
                     src="/vanikasLogo.svg" 
                     alt="Vanikas Logo" 
                     className='md:w-[250px] w-[200px]' 
+                    layout="responsive" 
                     width={250} // Adjust width as needed
                     height={100} // Adjust height as needed to maintain aspect ratio
                 />

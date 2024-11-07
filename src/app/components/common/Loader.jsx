@@ -31,7 +31,7 @@ export default function Loader() {
   return (
     <div className="flex items-center justify-center w-full h-[100vh] bg-primary text-white fixed top-0 left-0 z-[999999999]">
       <div>
-        <Image src="/vanikasLogo.svg" className="max-w-[200px] lg:max-w-[auto]" width={500} height={100} alt="Brand Logo" />
+        <Image src="/vanikasLogo.svg" layout="responsive" className="max-w-[200px] lg:max-w-[auto]" width={500} height={100} alt="Brand Logo" />
       </div>
     </div>
   );

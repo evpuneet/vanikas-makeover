@@ -1,4 +1,5 @@
-import Loader from "./components/common/Loader";
+// layout.js
+import ClientLayout from "./components/common/ClientLayout";
 import "./globals.css";
 
 export const metadata = {
@@ -7,12 +8,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <body>
-      <Loader /> {/* This will show the loader initially */}
-        {children}  {/* Your main content */}
+        <ClientLayout>{children}</ClientLayout> {/* Use ClientLayout here */}
       </body>
     </html>
   );

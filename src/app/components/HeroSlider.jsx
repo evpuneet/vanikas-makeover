@@ -9,6 +9,7 @@ import 'swiper/css/scrollbar';
 import { Autoplay, Scrollbar } from 'swiper/modules';
 import { FaWhatsapp } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
+import { TextGenerateEffect } from './ui/Text-Generate-Effect';
 export default function HeroSlider() {
   // let [cross, setCross] = useState(false)
   // let close=()=>{
@@ -28,6 +29,8 @@ export default function HeroSlider() {
     window.open(googleMapsURL, '_blank');
   };
 
+  let tagline="Beauty Salon of Jodhpur"
+
   return (
     <>
       <div className='relative'>
@@ -37,13 +40,16 @@ export default function HeroSlider() {
             delay: 3500,
             disableOnInteraction: false,
           }}
+          loop={true}
           modules={[Autoplay, Scrollbar]}
           className="mySwiper"
         >
           <SwiperSlide>
             <div className='w-[100vw] h-[100vh] grid lg:grid-cols-2 grid-cols-1 items-center lg:ps-[70px] ps-3 text-white lg:pt-0 pt-[150px]'>
               <div>
-                <h2 className='font-Forum text-[40px] mb-[10px] text-center lg:text-left lg:mb-[20px]'>Beauty Salon of Jodhpur</h2>
+                <h2 className='font-Forum text-[40px] mb-[10px] text-center lg:text-left lg:mb-[20px]'>
+                  <TextGenerateEffect words={tagline}/>
+                </h2>
                 <p className='lg:mb-[50px] mb-[30px] md:text-[16px] lg:text-left text-center text-[14px]'>
                   At Vanikka&apos;s, we believe in the harmony of beauty and excellence.
                   Our mission is to provide top-notch beauty services using the
@@ -66,6 +72,7 @@ export default function HeroSlider() {
                   alt="A woman at the salon" // Provide descriptive alt text
                   width={600} // Set appropriate width
                   height={400} // Set appropriate height
+                  layout="responsive" 
                   className='w-[100%] h-auto' // Use responsive width
                 />
               </div>
@@ -84,7 +91,7 @@ export default function HeroSlider() {
         <div className='bg-white rounded-[80px_80px_0_0] lg:py-12 py-6 lg:px-[200px] absolute top-[80px] w-[100%] -translate-y-[60%] z-[10] grid lg:grid-cols-2 grid-cols-1'>
           <div className=''></div>
           <div className='lg:text-right text-center text-primary'>
-            <h4 className='text-[40px] font-Forum '>Why Choose Us?</h4>
+            <h4 className='section-title text-right py-5'>Why Choose Us?</h4>
             <p className='lg:text-[16px] text-[14px]'>
               With 24 years of experience, Vanikka&apos;s offers the benefit of
               over two decades of expertise in the beauty industry. Our
@@ -96,6 +103,9 @@ export default function HeroSlider() {
             </p>
           </div>
         </div>
+
+          {/* whatsapp icon */}
+
         <div className=' fixed right-[20px] bottom-[20px] z-[999999]'>
 
           {/* we will use this feature in future */}

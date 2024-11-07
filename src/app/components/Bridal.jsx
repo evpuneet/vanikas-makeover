@@ -7,7 +7,7 @@ export default function Bridal() {
       <section className='bg-[#fef9f5] px-[130px] lg:block hidden'>
         <div className='bg-bridal-texture h-[550px] bg-no-repeat bg-cover grid grid-cols-2 items-center'>
           <div className='px-[130px] text-primary'>
-            <h4 className='text-[40px] font-Forum'>Why Choose Us?</h4>
+            <h4 className='section-title text-left py-5'>Why Choose Us?</h4>
             <p className='text-[16px] mb-[10px]'>
               With 24 years of experience, Vanikka&apos;s offers the benefit of
               over two decades of expertise in the beauty industry. Our
@@ -34,7 +34,7 @@ export default function Bridal() {
       <section className='bg-bridal-m-texture bg-left bg-no-repeat bg-cover h-[700px] px-[50px] block lg:hidden text-center overflow-hidden'>
         <div className='h-full grid grid-cols-1 items-center'>
           <div className='text-primary'>
-            <h4 className='text-[40px] font-Forum'>Why Choose Us?</h4>
+            <h4 className='section-title '>Why Choose Us?</h4>
             <p className='text-[16px] md:mb-[10px] mb-[30px]'>
               With 24 years of experience, Vanikka&apos;s offers the benefit of
               over two decades of expertise in the beauty industry. Our
