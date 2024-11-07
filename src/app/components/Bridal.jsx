@@ -34,7 +34,7 @@ export default function Bridal() {
       <section className='bg-bridal-m-texture bg-left bg-no-repeat bg-cover h-[700px] px-[50px] block lg:hidden text-center overflow-hidden'>
         <div className='h-full grid grid-cols-1 items-center'>
           <div className='text-primary'>
-            <h4 className='section-title text-[80px] py-4 pb-8'>Birdal</h4>
+            <h4 className='section-title text-[60px] py-4 pb-8'>Birdal</h4>
             <p className='text-[16px] md:mb-[10px] mb-[30px]'>
               With 24 years of experience, Vanikka&apos;s offers the benefit of
               over two decades of expertise in the beauty industry. Our

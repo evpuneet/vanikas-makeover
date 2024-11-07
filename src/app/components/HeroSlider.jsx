@@ -89,10 +89,11 @@ export default function HeroSlider() {
       </div>
       <div className='relative h-[200px]'>
         <div className='bg-white rounded-[80px_80px_0_0] lg:py-12 py-6 lg:px-[200px] absolute top-[80px] w-[100%] -translate-y-[60%] z-[10] grid lg:grid-cols-2 grid-cols-1'>
-          <div className=''></div>
+          <div className='hidden md:block'></div>
           <div className='lg:text-right text-center text-primary'>
-            <h4 className='section-title text-right lg:py-5 pb-3 pe-3 lg:pe-1'>Why Choose Us?</h4>
-            <p className='lg:text-[16px] text-[14px]'>
+            <h4 className='section-title text-right lg:py-5 pb-3 pe-3 lg:pe-1 hidden md:block'>Why Choose Us?</h4>
+            <h4 className='section-title text-center lg:py-5 pb-3 pe-3 lg:pe-1 md:hidden text-[50px]'>Why Choose Us?</h4>
+            <p className='lg:text-[16px] text-[14px] md:px-[0px] px-[20px]'>
               With 24 years of experience, Vanikka&apos;s offers the benefit of
               over two decades of expertise in the beauty industry. Our
               personalized services are tailored to meet your unique needs

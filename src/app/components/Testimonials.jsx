@@ -79,13 +79,13 @@ const TestimonialsColumn = ({ className, testimonials, duration }) => (
       <React.Fragment key={index}>
         {testimonials.map(({ text, imageSrc, name, username }) => (
           <div className="card" key={name}>
-            <div>{text}</div>
             <div className="flex items-center gap-2 mt-5">
               <Image src={imageSrc} alt={name} className="w-10 h-10 rounded-full" width={40} height={40} />
               <div>
                 <div className="flex flex-col">{name}</div>
               </div>
             </div>
+            <div>{text}</div>
           </div>
         ))}
       </React.Fragment>
