@@ -25,9 +25,9 @@ export default function MeetOurOwner() {
     });
 
     timeline
-      .from(imageRef.current, { opacity: 0, y: 50, duration: 0.5 })
-      .from(nameRef.current, { opacity: 0, y: 30, duration: 0.3 }, "-=0.5")
-      .from(descRef.current, { opacity: 0, y: 20, duration: 0.3 }, "-=0.5");
+      .from(imageRef.current, { opacity: 0, y: 50, duration: 1 })
+      .from(nameRef.current, { opacity: 0, y: 30, duration: .9 }, "-=0.5")
+      .from(descRef.current, { opacity: 0, y: 20, duration: 0.8 }, "-=0.5");
 
     return () => {
       if (timeline.scrollTrigger) timeline.scrollTrigger.kill();
@@ -47,7 +47,6 @@ export default function MeetOurOwner() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
           <div>
-            <h4 className="mb-[10px]">Follow Us On</h4>
             <div className="flex justify-center gap-[30px]">
               <a href='https://www.instagram.com/vanikkas14' className="hover:underline underline-offset-2 transition-all flex items-center justify-end lg:justify-start gap-1 cursor-pointer"><RiInstagramFill />Instagram</a>
             </div>
