@@ -15,7 +15,6 @@ export default function Hero() {
         <HeroSlider/>
         <OurServices/>
         <Bridal/>
-        {/* <CustomerTree/> */}
         <MeetOurOwner/>
         <Testimonials/>
         <Footer/>

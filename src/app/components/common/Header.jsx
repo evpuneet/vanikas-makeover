@@ -70,7 +70,7 @@ export default function Header() {
                 </div>
             </header>
 
-            <div className={menuStatus ? 'lg:hidden block bg-white text-black h-[100vh] w-[75%] z-[999999999] fixed -translate-x-[0%] transition-all duration-1000' : "lg:hidden block bg-white text-black h-[100vh] w-[75%] z-[999999999] fixed -translate-x-[100%] transition-all duration-500"}>
+            <div className={menuStatus ? 'lg:hidden block bg-white text-black h-[100vh] w-full z-[999999999] fixed -translate-x-[0%] transition-all duration-1000' : "lg:hidden block bg-white text-black h-[100vh] w-full z-[999999999] fixed -translate-x-[100%] transition-all duration-500"}>
                 <RxCross1 
                     className='absolute right-[50px] top-[50px] text-primary font-medium' 
                     onClick={menuBtn}

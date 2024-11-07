@@ -12,6 +12,11 @@ export default function Bridal() {
   const textRef = useRef(null);
   const imageRef = useRef(null);
 
+  const titleRef = useRef(null);
+  const subtitleRef = useRef(null);
+  const imageRef2 = useRef(null);
+  const buttonRef = useRef(null);
+  
   useEffect(() => {
     if (!textRef.current || !imageRef.current) return;
 
@@ -53,10 +58,6 @@ export default function Bridal() {
   }, []);
 
   // Refs for elements to animate
-  const titleRef = useRef(null);
-  const subtitleRef = useRef(null);
-  const imageRef2 = useRef(null);
-  const buttonRef = useRef(null);
 
   useEffect(() => {
     // Title Animation (from right)

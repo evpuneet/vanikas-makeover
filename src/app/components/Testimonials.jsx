@@ -98,9 +98,9 @@ export default function Testimonials() {
     useEffect(() => {
         // Title Animation (from right)
         gsap.from(titleRef.current, {
-          x: 100,
+          y: 50,
           opacity: 0,
-          duration: 1,
+          duration: 2,
           scrollTrigger: {
             trigger: titleRef.current,
             start: "top 80%", // Adjust start position
