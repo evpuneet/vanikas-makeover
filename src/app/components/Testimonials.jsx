@@ -102,7 +102,8 @@ export default function Testimonials() {
     <section className="bg-white py-12">
       <div className="">
         <div className="section-heading">
-          <h2 className="section-title my-5">What our customers say</h2>
+          <h2 className="section-title my-5 hidden md:block">What our customers say</h2>
+          <h2 className="section-title my-5 text-[50px] md:hidden">Customer Feedback</h2>
         </div>
         <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] mt-10 max-h-[738px] overflow-clip">
           <TestimonialsColumn testimonials={firstColumn} duration={12} />
