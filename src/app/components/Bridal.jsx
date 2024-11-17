@@ -142,8 +142,10 @@ export default function Bridal() {
         <div className='h-full py-8 flex flex-col justify-center'>
           <div ref={refs.text} className='text-primary opacity-100'>
             <h4 className='section-title text-[40px] sm:text-[60px] py-4 pb-8 text-center opacity-100'>Bridal</h4>
-            <p className='text-[16px] mb-[30px] text-center opacity-100'>
-              With 24 years of experience, Vanikka&apos;s offers the benefit of over two decades of expertise in the beauty industry. Our personalized services are tailored to meet your unique needs and preferences, ensuring that you receive the care and attention you deserve. We are committed to uncompromised quality, using only the highest quality premium products to provide exceptional care.
+            <p className='text-[16px] mb-[30px] lg:mb-[10px] text-center opacity-100'>
+              With 24 years of experience, Vanikka&apos;s offers the benefit of over two decades of expertise in the beauty industry. 
+              Our personalized services are tailored to meet your unique needs and preferences, ensuring that you receive the care and attention you deserve. 
+              We are committed to uncompromised quality, using only the highest quality premium products to provide exceptional care.
             </p>
             <div className='text-center'>
               <a href="tel:54651635165" className='inline-block text-nowrap bg-primary rounded-[5px] text-white px-4 py-2 text-[14px] font-semibold opacity-100'>Book Now</a>

@@ -7,32 +7,32 @@ export default function Services() {
     {
       title: "Hair Care",
       description: "Professional hair cutting, styling, coloring, highlights, hair spa treatments, and more.",
-      image: "/public/assets/hair-services.png"
+      image: "/assets/hair-services.png"
     },
     {
       title: "Facial & Skincare", 
       description: "Rejuvenating facials, clean-ups, anti-aging treatments, and specialized skin treatments.",
-      image: "/facial-service.jpg"
+      image: "/assets/facial-service.jpg"
     },
     {
       title: "Makeup",
       description: "Professional makeup services for all occasions - bridal, party, or everyday glamour.",
-      image: "/makeup-service.jpg"
+      image: "/assets/makeup-service.jpg"
     },
     {
       title: "Nail Care",
       description: "Manicures, pedicures, nail art, and gel polish services for beautiful hands and feet.",
-      image: "/nails-service.jpg"
+      image: "/assets/nails-service.jpg"
     },
     {
       title: "Body Treatments",
       description: "Relaxing massages, body wraps, scrubs, and specialized therapeutic treatments.",
-      image: "/body-service.jpg"
+      image: "/assets/body-service.jpg"
     },
     {
       title: "Threading & Waxing",
       description: "Professional hair removal services using premium products for smooth, glowing skin.",
-      image: "/waxing-service.jpg"
+      image: "/assets/waxing-service.jpg"
     }
   ];
 
@@ -55,7 +55,12 @@ export default function Services() {
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-[200px]">
-                  <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-3 text-[#6d0000]">{service.title}</h3>

@@ -2,6 +2,24 @@ import React from 'react'
 import Image from 'next/image'
 
 export default function Bridal() {
+  const collections = [
+    {
+      title: "Classic Collection",
+      description: "Timeless designs for the traditional bride.",
+      image: "/classic-bridal.jpg"
+    },
+    {
+      title: "Modern Collection", 
+      description: "Contemporary styles for the fashion-forward bride.",
+      image: "/modern-bridal.jpg"
+    },
+    {
+      title: "Luxury Collection",
+      description: "Exclusive designs for the sophisticated bride.", 
+      image: "/luxury-bridal.jpg"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -27,51 +45,22 @@ export default function Bridal() {
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-[#6d0000]">Our Collections</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Collection Cards */}
-            <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
-              <div className="relative h-[400px]">
-                <Image
-                  src="/classic-bridal.jpg"
-                  alt="Classic Collection"
-                  fill
-                  className="object-cover"
-                />
+            {collections.map((collection, index) => (
+              <div key={index} className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
+                <div className="relative h-[400px]">
+                  <Image
+                    src={collection.image}
+                    alt={collection.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-[#6d0000]">{collection.title}</h3>
+                  <p className="text-gray-600">{collection.description}</p>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-[#6d0000]">Classic Collection</h3>
-                <p className="text-gray-600">Timeless designs for the traditional bride.</p>
-              </div>
-            </div>
-
-            <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
-              <div className="relative h-[400px]">
-                <Image
-                  src="/modern-bridal.jpg"
-                  alt="Modern Collection"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-[#6d0000]">Modern Collection</h3>
-                <p className="text-gray-600">Contemporary styles for the fashion-forward bride.</p>
-              </div>
-            </div>
-
-            <div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
-              <div className="relative h-[400px]">
-                <Image
-                  src="/luxury-bridal.jpg"
-                  alt="Luxury Collection"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-[#6d0000]">Luxury Collection</h3>
-                <p className="text-gray-600">Exclusive designs for the sophisticated bride.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
