@@ -11,6 +11,7 @@ export default function Header() {
     const pathname = usePathname();
     
     const menus = [
+        { id: "home", label: "Home", path: "/" },
         { id: "our-services", label: "Our Services", path: "/services" },
         { id: "location", label: "Location", path: null },
         { id: "bridal", label: "Bridal", path: "/bridal" },
