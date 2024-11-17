@@ -31,14 +31,14 @@ export default function Loader() {
 
   return (
     <div className="fixed inset-0 z-[999999999] flex items-center justify-center bg-primary">
-      <div className="w-full max-w-[500px]">
+      <div className="flex items-center justify-center w-full">
         <Image
           src="/vanikasLogo.svg"
           width={500}
           height={100}
           alt="Brand Logo"
           priority
-          className="w-full max-w-[200px] lg:max-w-none"
+          className="w-[200px] md:w-[400px] animate-pulse hover:scale-105 transition-transform duration-300"
         />
       </div>
     </div>

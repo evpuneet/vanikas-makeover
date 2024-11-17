@@ -20,6 +20,9 @@ export default function MeetOurOwner() {
   };
 
   useEffect(() => {
+    // Only run animations on client-side
+    if (typeof window === 'undefined') return;
+
     const elements = [
       { ref: refs.image, y: 50, duration: 1 },
       { ref: refs.name, y: 30, duration: 0.5 },
@@ -37,17 +40,23 @@ export default function MeetOurOwner() {
 
     // Add animations to timeline
     elements.forEach(({ ref, y, duration }, index) => {
-      timeline.from(ref.current, 
-        { 
-          opacity: 0, 
-          y, 
-          duration 
-        }, 
-        index === 0 ? 0 : "-=0.5"
-      );
+      if (ref.current) {
+        timeline.from(ref.current, 
+          { 
+            opacity: 1, // Start fully visible
+            y, 
+            duration 
+          }, 
+          index === 0 ? 0 : "-=0.5"
+        );
+      }
     });
 
-    return () => timeline.scrollTrigger && timeline.scrollTrigger.kill();
+    return () => {
+      if (timeline.scrollTrigger) {
+        timeline.scrollTrigger.kill();
+      }
+    };
   }, []);
 
   return (
@@ -60,7 +69,7 @@ export default function MeetOurOwner() {
       </h2>
       
       <div className="w-[80%] mx-auto grid lg:grid-cols-2 grid-cols-1 items-center lg:place-items-start place-items-center">
-        <div ref={refs.image} className="lg:w-auto w-[200px]">
+        <div ref={refs.image} className="lg:w-auto w-[200px] opacity-100">
           <Image 
             src="/assets/vanikas.png" 
             className="rounded-full shadow-[4px_5px_10px_rgba(0,0,0,0.4)]" 
@@ -71,8 +80,8 @@ export default function MeetOurOwner() {
           />
         </div>
         
-        <div ref={refs.desc} className="text-white text-center mb-[10px]">
-          <h2 ref={refs.name} className="text-[40px] mb-[20px]">
+        <div ref={refs.desc} className="text-white text-center mb-[10px] opacity-100">
+          <h2 ref={refs.name} className="text-[40px] mb-[50px] opacity-100">
             Yogita Joshi
           </h2>
           <p className="text-[16px] mb-[20px]">
