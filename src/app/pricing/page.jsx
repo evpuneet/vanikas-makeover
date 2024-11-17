@@ -21,7 +21,7 @@ export default function Pricing() {
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <h2 className="text-3xl font-bold text-[#6d0000] mb-4">Under Development</h2>
             <p className="text-xl text-gray-600">
-              We're currently working on bringing you our comprehensive pricing details.
+              We&apos;re currently working on bringing you our comprehensive pricing details.
               This page will be available soon with all our service rates and special packages.
             </p>
             <div className="mt-8">
