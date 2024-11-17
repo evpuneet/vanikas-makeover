@@ -2,12 +2,12 @@
 import React, { useState } from 'react'
 
 export default function Tabs() {
-  const [activeTab, setActiveTab] = useState("Pre-wedding & Bridal");
+  const [activeTab, setActiveTab] = useState("Bridal");
 
   const tabs = [
     {
-      id: "Pre-wedding & Bridal",
-      label: "Pre-wedding & Bridal",
+      id: "Bridal",
+      label: "Bridal", 
       content: "Vanikka's specializes in bridal beauty with customized hair styling, flawless makeup, skin treatments, and pampering services to ensure you look and feel stunning on your special day."
     },
     {
@@ -16,24 +16,28 @@ export default function Tabs() {
       content: "Vanikka's provides women's body services including relaxing massages, exfoliating scrubs, detoxifying treatments, body wraps, and full-body pampering, ensuring a revitalized and refreshed experience."
     },
     {
-      id: "Skin",
+      id: "Skin", 
       label: "Skin",
       content: "Vanikka's offers comprehensive women's skin services, featuring rejuvenating facials, deep cleansing, hydration treatments, exfoliation, and anti-aging solutions to achieve radiant, flawless skin."
     },
     {
       id: "Hair",
-      label: "Hair",
+      label: "Hair", 
       content: "At Vanikka's, women's hair services include expert cuts, vibrant coloring, luxurious conditioning, precise styling, and smoothing treatments, all tailored to enhance your unique beauty."
     }
   ];
 
   return (
     <div>
-      <div className="flex justify-end gap-8 text-[13px] lg:text-[16px]">
+      <div className="flex flex-wrap justify-end gap-4 md:gap-8">
         {tabs.map((tab) => (
           <h5
             key={tab.id}
-            className={`cursor-pointer mb-6 ${activeTab === tab.id ? 'text-white lg:font-bold md:font-semibold font-medium rounded-lg px-2 transition-all drop-shadow-white-glow' : 'text-white transition-all duration-500 ease-in-out hover:opacity-100 opacity-[.6]'}`}
+            className={`cursor-pointer mb-6 text-[14px] md:text-[20px] lg:text-[24px] whitespace-nowrap ${
+              activeTab === tab.id 
+                ? 'text-white lg:font-bold md:font-semibold font-medium rounded-lg px-2 transition-all drop-shadow-white-glow' 
+                : 'text-white transition-all duration-500 ease-in-out hover:opacity-100 opacity-[.6]'
+            }`}
             onClick={() => setActiveTab(tab.id)}
           >
             {tab.label}
@@ -45,7 +49,9 @@ export default function Tabs() {
         {tabs.map((tab) => (
           activeTab === tab.id && (
             <div key={tab.id} className="mb-8">
-              <p className="lg:text-[16px] text-[14px] mb-4 duration-500 transition-all h-auto">{tab.content}</p>
+              <p className="text-[13px] md:text-[14px] lg:text-[16px] mb-4 duration-500 transition-all h-auto">
+                {tab.content}
+              </p>
               <a
                 href="tel:54651635155"
                 className="bg-white rounded px-4 py-2 text-primary text-[12px] font-semibold "
