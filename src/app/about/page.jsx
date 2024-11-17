@@ -18,7 +18,7 @@ export default function AboutUs() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
-            <h3 className="text-xl md:text-2xl">Naturals - Creating Experiences With Businesses</h3>
+            <h3 className="text-xl md:text-2xl">Vanikas Makeover - Creating Experiences With Businesses</h3>
           </div>
         </div>
       </section>
@@ -37,20 +37,20 @@ export default function AboutUs() {
           </div>
           <div className="space-y-6">
             <p className="text-gray-700">
-              Naturals was conceived with the idea of the modern Indian. Founded by K. Veena, 
+              Vanikas Makeover was conceived with the idea of the modern Indian. Founded by K. Veena, 
               whose knowledge of the international beauty industry pioneered a new era in the hair
-              and beauty care industry in India, Naturals has made a path-breaking change in the
+              and beauty care industry in India, Vanikas Makeover has made a path-breaking change in the
               way the beauty industry has been perceived.
             </p>
             <p className="text-gray-700">
               So in the early 2000s, she made that dream a reality by setting up her first salon in Chennai.
               It took her only a while to understand the market potential and the ever-increasing demand for
               professional grooming. In 2004 her husband co-founder & CEO, CK Kumaravel joined and ever since
-              then, the Naturals team has been able to meet every challenge in this competitive industry.
+              then, the Vanikas Makeover team has been able to meet every challenge in this competitive industry.
             </p>
             <p className="text-gray-700">
-              Today, Naturals is India's most prominent chain of hair and beauty salons. Thanks to our
-              world-class service, courteous staff and loyal support from our patrons, Naturals now has 750+ salons across
+              Today, Vanikas Makeover is India&apos;s most prominent chain of hair and beauty salons. Thanks to our
+              world-class service, courteous staff and loyal support from our patrons, Vanikas Makeover now has 750+ salons across
               the sub-continent and aims to expand to 3000 salons by 2029.
             </p>
           </div>
@@ -72,10 +72,10 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* World of Naturals Section */}
+      {/* World of Vanikas Makeover Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6d0000]">The World Of Naturals</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6d0000]">The World Of Vanikas Makeover</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[1, 2, 3, 4, 5, 6].map((num) => (
               <div key={num} className="relative h-[200px] transform transition-transform hover:scale-105">
@@ -139,7 +139,7 @@ export default function AboutUs() {
       {/* Statistics Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6d0000]">The Naturals Nationwide Wave</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6d0000]">The Vanikas Makeover Nationwide Wave</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {[
               { id: 1, number: "800", label: "SALON" },
@@ -172,8 +172,8 @@ export default function AboutUs() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Naturals 3.0",
-                description: "Naturals 3.0 aims to revolutionize the beauty industry by seamlessly integrating cutting-edge technology. We will leverage AI for personalized beauty solutions, enhance salon experiences with virtual consultations, and streamline operations with advanced tech tools, setting a new standard in beauty innovation."
+                title: "Vanikas Makeover 3.0",
+                description: "Vanikas Makeover 3.0 aims to revolutionize the beauty industry by seamlessly integrating cutting-edge technology. We will leverage AI for personalized beauty solutions, enhance salon experiences with virtual consultations, and streamline operations with advanced tech tools, setting a new standard in beauty innovation."
               },
               {
                 title: "1000+ Women Entrepreneurs",
