@@ -2,36 +2,44 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 export default function Loader() {
   const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    // Disable scrolling when the loader is visible
-    if (isVisible) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
+  // Separate the scroll management logic
+  const toggleScroll = useCallback((disable) => {
+    document.body.classList.toggle('no-scroll', disable);
+  }, []);
 
-    // Simulate loading duration (e.g., 2 seconds)
+  useEffect(() => {
+    // Apply scroll lock immediately
+    toggleScroll(isVisible);
+
     const timer = setTimeout(() => {
       setIsVisible(false);
     }, 2000);
 
+    // Cleanup function
     return () => {
       clearTimeout(timer);
-      document.body.classList.remove("no-scroll"); // Ensure scrolling is enabled on unmount
+      toggleScroll(false);
     };
-  }, [isVisible]);
+  }, []); // Remove isVisible dependency since we only want this to run once
 
   if (!isVisible) return null;
 
   return (
-    <div className="flex items-center justify-center w-full h-[100vh] bg-primary text-white fixed top-0 left-0 z-[999999999]">
-      <div>
-        <Image src="/vanikasLogo.svg" layout="responsive" className="max-w-[200px] lg:max-w-[auto]" width={500} height={100} alt="Brand Logo" />
+    <div className="fixed inset-0 z-[999999999] flex items-center justify-center bg-primary">
+      <div className="w-full max-w-[500px]">
+        <Image
+          src="/vanikasLogo.svg"
+          width={500}
+          height={100}
+          alt="Brand Logo"
+          priority
+          className="w-full max-w-[200px] lg:max-w-none"
+        />
       </div>
     </div>
   );

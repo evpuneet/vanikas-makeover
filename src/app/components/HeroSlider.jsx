@@ -135,6 +135,13 @@ export default function HeroSlider() {
             </div>
           </SwiperSlide>
           {/* Add additional SwiperSlides as needed */}
+          <SwiperSlide>
+            <div className='w-[100%] h-[100vh] md:bg-banner-2 bg-banner-m-2 bg-no-repeat bg-cover relative'>
+            <button className='bg-white text-primary text-[16px] lg:px-4 px-2 lg:py-2 py-1 md:bottom-[150px] lg:left-[10%] rounded-lg absolute bottom-[90px] left-[50%] translate-x-[-50%]'>
+              Book Appointment
+            </button>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
       {/* Additional content here */}

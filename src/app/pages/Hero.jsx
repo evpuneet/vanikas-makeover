@@ -11,13 +11,11 @@ import Testimonials from '../components/Testimonials'
 export default function Hero() {
   return (
     <>
-        <Header />
         <HeroSlider/>
         <OurServices/>
         <Bridal/>
         <MeetOurOwner/>
         <Testimonials/>
-        <Footer/>
     </>
   )
 }

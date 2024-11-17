@@ -15,57 +15,57 @@ export default function OurServices() {
   const imageRef = useRef(null);
   const tabdivRef = useRef(null);
 
-  useEffect(() => {
-    // Title Animation (from right)
-    gsap.from(titleRef.current, {
-      x: 100,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: titleRef.current,
-        start: "top 80%", // Adjust start position
-        toggleActions: "play none none reverse",
-      },
-    });
+  // useEffect(() => {
+  //   // Title Animation (from right)
+  //   gsap.from(titleRef.current, {
+  //     x: 100,
+  //     opacity: 0,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: titleRef.current,
+  //       start: "top 80%", // Adjust start position
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
 
-    // Subtitle Animation (from right)
-    gsap.from(subtitleRef.current, {
-      x: 100,
-      opacity: 0,
-      delay: 0.3,
-      duration: 1,
-      scrollTrigger: {
-        trigger: subtitleRef.current,
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
-    });
+  //   // Subtitle Animation (from right)
+  //   gsap.from(subtitleRef.current, {
+  //     x: 100,
+  //     opacity: 0,
+  //     delay: 0.3,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: subtitleRef.current,
+  //       start: "top 80%",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
 
-    // Image Animation (from left)
-    gsap.from(imageRef.current, {
-      x: -100,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: imageRef.current,
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
-    });
+  //   // Image Animation (from left)
+  //   gsap.from(imageRef.current, {
+  //     x: -100,
+  //     opacity: 0,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: imageRef.current,
+  //       start: "top 80%",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
 
-    // Subtitle Animation (from right)
-    gsap.from(tabdivRef.current, {
-      x: 100,
-      opacity: 0,
-      delay: 0.3,
-      duration: 1,
-      scrollTrigger: {
-        trigger: tabdivRef.current,
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  }, []);
+  //   // Subtitle Animation (from right)
+  //   gsap.from(tabdivRef.current, {
+  //     x: 100,
+  //     opacity: 0,
+  //     delay: 0.3,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: tabdivRef.current,
+  //       start: "top 80%",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
+  // }, []);
 
   
 
@@ -78,15 +78,14 @@ export default function OurServices() {
             alt="Services for Women" 
             width={400}
             height={300}
-            layout='responsive'
-            className='absolute md:bottom-[47px] bottom-[-530px] scale-50 md:scale-150 md:left-[60px] left-[-30] transition-all'
+            className='absolute md:bottom-[47px] bottom-[-530px] scale-50 md:scale-150 object-cover md:left-[60px] left-[-30px] w-[300px] transition-all'
             ref={imageRef} // Ref for the image
           />
         </div>
         <div className='text-right'>
           <h3
             ref={titleRef} // Ref for the title
-            className='mt-[30px] text-[50px] md:mb-[40px] mb-[20px] font-Forum md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-clip-text pt-5'
+            className='mt-[30px] text-[50px] md:mb-[40px] mb-[20px] font-Forum md:text-[54px]  md:leading-[60px] font-bold tracking-tighter bg-clip-text pt-5'
           >
             Our Services
           </h3>
