@@ -152,7 +152,7 @@ export default function HeroSlider() {
             <h4 className='section-title text-right lg:py-5 pb-3 pe-3 lg:pe-1 hidden md:block'>Why Choose Us?</h4>
             <h4 className='section-title text-center lg:py-5 py-3 pb-6 pe-3 lg:pe-1 md:hidden text-[50px]'>Why Choose Us?</h4>
             <p className='lg:text-[16px] text-[14px] md:px-[0px] px-[20px]'>
-              With 24 years of experience, Vanikka&apos;s offers the benefit of
+              With 10 years of experience, Vanikka&apos;s offers the benefit of
               over two decades of expertise in the beauty industry. Our
               personalized services are tailored to meet your unique needs
               and preferences, ensuring that you receive the care and

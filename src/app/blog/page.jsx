@@ -10,7 +10,7 @@ export default function Blog() {
   const blogPosts = [
     {
       id: 1,
-      image: "/Types+of+layer+haircuts+at+Naturals+Salon.png",
+      image: "/assets/layer-cut.webp",
       date: "26/10/2024",
       title: "Layer Cut Styles & Prices at Naturals Salon | Find the Best Fit for Your Budget",
       description: "Discover stunning layer cut styles at Naturals Salon, starting from Rs. 1,000. From subtle layers to bold transformations, explore affordable options tailored to every hair type and budget. Enhance your look today...",
@@ -18,7 +18,7 @@ export default function Blog() {
     },
     {
       id: 2, 
-      image: "/keratin+treatment+at+Naturals+Salon.png",
+      image: "/assets/keratin-hair-treatment.jpg",
       date: "24/10/2024",
       title: "Cost of Keratin Treatment and Their Benefits | Naturals Salon",
       description: "Find out how much a Keratin Treatment costs and discover its benefits for healthier, shinier hair. To visit Naturals Salon, just type 'Naturals salon near me...",
@@ -26,11 +26,11 @@ export default function Blog() {
     },
     {
         id: 3, 
-        image: "/keratin+treatment+at+Naturals+Salon.png",
+        image: "/assets/eyebrow.jpg",
         date: "24/10/2024",
-        title: "Cost of Keratin Treatment and Their Benefits | Naturals Salon",
-        description: "Find out how much a Keratin Treatment costs and discover its benefits for healthier, shinier hair. To visit Naturals Salon, just type 'Naturals salon near me...",
-        dataId: "cost-of-keratin-treatment-and-their-benefits"
+        title: "Eyebrow Threading Tips & Techniques | Perfect Arch Guide",
+        description: "Learn professional eyebrow threading techniques and tips for achieving the perfect arch. Discover how to maintain well-shaped brows and find expert threading services near you...",
+        dataId: "eyebrow-threading-tips-and-techniques"
       },
     // Add remaining blog posts here...
   ];
