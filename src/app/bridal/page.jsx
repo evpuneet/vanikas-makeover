@@ -29,13 +29,6 @@ export default function Bridal() {
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh]">
         <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] z-10" />
-        <Image
-          src="/bridal-hero.jpg" 
-          alt="Bridal Collection"
-          fill
-          className="object-cover"
-          priority
-        />
         <div className="relative z-20 container mx-auto h-full flex justify-center items-center">
           <div className="text-white text-center px-4">
             <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum mb-4"} />

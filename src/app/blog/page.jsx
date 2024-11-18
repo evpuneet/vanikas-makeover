@@ -38,7 +38,7 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Banner Section */}
-      <div className="relative w-full h-[300px] md:h-[400px]">
+      <div className="relative w-full h-[400px] md:h-[500px]">
         <Image
           src="/assets/banner_blogs.jpg"
           alt="Blog Banner"
@@ -47,7 +47,7 @@ export default function Blog() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] flex items-center flex-col justify-center">
-            <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum text-white mt-8"} />
+            <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum text-white"} />
             <ParaGenEffect words={description} className={"text-xl md:text-2xl text-white italic"} />
         </div>
       </div>
