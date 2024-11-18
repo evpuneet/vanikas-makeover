@@ -9,6 +9,15 @@ body {
   font-family: Poppins;
 }
 
+
+.CardHoverEffect>div>div{
+    padding: 0 !important;
+}
+
+.Card-Hover-Link>* { 
+    border: none !important;
+}
+
 /* TODO: */
 /* FIXME: */
 

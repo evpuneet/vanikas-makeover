@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { TextGenerateEffect } from '../components/ui/Text-Generate-Effect';
 import { ParaGenEffect } from '../components/ui/ParaGen-Effect';
+import { ThreeDCardDemo } from '../components/ui/ThreeDCard';
 
 export default function Bridal() {
   let tagline = "Bridal Collection";
@@ -40,8 +41,9 @@ export default function Bridal() {
       {/* Featured Collections */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-[#6d0000]">Our Collections</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl md:text-6xl section-title font-semibold text-center mb-12 text-[#6d0000]">Our Collections</h2>
+          <ThreeDCardDemo />
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collections.map((collection, index) => (
               <div key={index} className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white">
                 <div className="relative h-[400px]">
@@ -58,7 +60,7 @@ export default function Bridal() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

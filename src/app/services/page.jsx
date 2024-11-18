@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { TextGenerateEffect } from '../components/ui/Text-Generate-Effect';
 import { ParaGenEffect } from '../components/ui/ParaGen-Effect';
+import { CardHoverEffect } from '../components/ui/Card-Hover-Effect';
 
 export default function Services() {
   let tagline="Our Services"
@@ -52,7 +53,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 px-4">
+      {/* <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -76,7 +77,8 @@ export default function Services() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <CardHoverEffect items={services} />
 
       {/* Call to Action */}
       <section className="bg-gray-50 py-16 px-4">
