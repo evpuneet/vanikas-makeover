@@ -1,8 +1,12 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import { TextGenerateEffect } from '../components/ui/Text-Generate-Effect';
+import { ParaGenEffect } from '../components/ui/ParaGen-Effect';
 
 export default function Blog() {
+  let tagline = "Blogs";
+  let description = "Read our latest blogs and stay updated with the latest trends and tips in the beauty industry.";
   const blogPosts = [
     {
       id: 1,
@@ -42,8 +46,9 @@ export default function Blog() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">Blogs</h1>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] flex items-center flex-col justify-center">
+            <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum text-white mt-8"} />
+            <ParaGenEffect words={description} className={"text-xl md:text-2xl text-white italic"} />
         </div>
       </div>
 

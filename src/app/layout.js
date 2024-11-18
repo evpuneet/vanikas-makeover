@@ -3,6 +3,7 @@ import ClientLayout from "./components/common/ClientLayout";
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import './globals.css';
+import WhatsApp from "./components/ui/WhatsApp";
 
 export const metadata = {
   title: "Vanikas Makeover",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
           <main className="min-h-screen ">
             {children}
           </main>
+          <WhatsApp/>
           <Footer />
         </ClientLayout>
       </body>

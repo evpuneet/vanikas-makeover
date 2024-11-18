@@ -2,8 +2,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { TextGenerateEffect } from '../components/ui/Text-Generate-Effect';
+import { ParaGenEffect } from '../components/ui/ParaGen-Effect';
 
 export default function AboutUs() {
+  let tagline = "About Us";
+  let description = "Vanikas Makeover was conceived with the idea of the modern Indian. Founded by K. Veena, whose knowledge of the international beauty industry pioneered a new era in the hair and beauty care industry in India, Vanikas Makeover has made a path-breaking change in the way the beauty industry has been perceived.";
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -15,10 +19,10 @@ export default function AboutUs() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000]/90 to-[#8a0000]/90 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">About Us</h1>
-            <h3 className="text-xl md:text-2xl">Vanikas Makeover - Creating Experiences With Businesses</h3>
+            <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum mb-4"} />
+            <ParaGenEffect words={"Vanikas Makeover - Creating Experiences With Businesses"} className={"text-xl md:text-2xl"} />
           </div>
         </div>
       </section>
@@ -29,7 +33,7 @@ export default function AboutUs() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="relative h-[300px] md:h-[400px] w-full">
             <Image
-              src="/assets/create_bw.jpg"
+              src="/public/assets/vanikkas-about.jpg"
               alt="Creating Beautiful World"
               fill
               className="object-cover rounded-lg"
@@ -58,7 +62,7 @@ export default function AboutUs() {
       </section>
 
       {/* Milestones Section */}
-      <section className="py-16 bg-gradient-to-r from-[#6d0000]/5 to-[#8a0000]/5">
+      <section className="py-16 bg-gradient-to-r from-[#6d0000]/10 to-[#8a0000]/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6d0000]">Milestones Over The Years</h2>
           <div className="relative h-[300px] md:h-[500px] w-full">
@@ -104,7 +108,7 @@ export default function AboutUs() {
       </section>
 
       {/* Awards Section */}
-      <section className="py-16 bg-gradient-to-r from-[#6d0000]/5 to-[#8a0000]/5">
+      <section className="py-16 bg-gradient-to-r from-[#6d0000]/10 to-[#8a0000]/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6d0000]">Awards</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -166,7 +170,7 @@ export default function AboutUs() {
       </section>
 
       {/* Vision 2029 Section */}
-      <section className="py-16 bg-gradient-to-r from-[#6d0000]/5 to-[#8a0000]/5">
+      <section className="py-16 bg-gradient-to-r from-[#6d0000]/10 to-[#8a0000]/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6d0000]">Vision 2029</h2>
           <div className="grid md:grid-cols-3 gap-8">

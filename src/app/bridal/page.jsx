@@ -1,22 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
+import { TextGenerateEffect } from '../components/ui/Text-Generate-Effect';
+import { ParaGenEffect } from '../components/ui/ParaGen-Effect';
 
 export default function Bridal() {
+  let tagline = "Bridal Collection";
+  let description = "Discover our exquisite collection of wedding dresses designed to make your special day unforgettable.";
   const collections = [
     {
       title: "Classic Collection",
       description: "Timeless designs for the traditional bride.",
-      image: "/classic-bridal.jpg"
+      image: "/assets/classic-bridal.jpg"
     },
     {
       title: "Modern Collection", 
       description: "Contemporary styles for the fashion-forward bride.",
-      image: "/modern-bridal.jpg"
+      image: "/assets/modern-bridal.jpg"
     },
     {
       title: "Luxury Collection",
       description: "Exclusive designs for the sophisticated bride.", 
-      image: "/luxury-bridal.jpg"
+      image: "/assets/luxury-bridal.png"
     }
   ];
 
@@ -32,10 +36,10 @@ export default function Bridal() {
           className="object-cover"
           priority
         />
-        <div className="relative z-20 container mx-auto h-full flex items-center">
-          <div className="text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Bridal Collection</h1>
-            <p className="text-lg md:text-xl max-w-2xl">Discover our exquisite collection of wedding dresses designed to make your special day unforgettable.</p>
+        <div className="relative z-20 container mx-auto h-full flex justify-center items-center">
+          <div className="text-white text-center px-4">
+            <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum mb-4"} />
+            <ParaGenEffect words={description} className={"text-lg md:text-xl max-w-2xl italic"} />
           </div>
         </div>
       </section>

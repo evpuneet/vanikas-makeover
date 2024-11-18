@@ -1,8 +1,11 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
+import { TextGenerateEffect } from '../components/ui/Text-Generate-Effect';
+import { ParaGenEffect } from '../components/ui/ParaGen-Effect';
 
 export default function Services() {
+  let tagline="Our Services"
   const services = [
     {
       title: "Hair Care",
@@ -42,8 +45,8 @@ export default function Services() {
       <section className="relative h-[400px] md:h-[500px] w-full">
         <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Our Services</h1>
-            <p className="text-xl md:text-2xl">Discover Beauty & Wellness Solutions</p>
+          <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum mb-4"} />
+          <ParaGenEffect words={"Discover Beauty & Wellness Solutions"} className={"text-lg md:text-xl italic"} />
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ export default function Header() {
     const menus = [
         { id: "home", label: "Home", path: "/" },
         { id: "our-services", label: "Our Services", path: "/services" },
-        { id: "location", label: "Location", path: null },
+        { id: "location", label: "Location", path: "/location" },
         { id: "bridal", label: "Bridal", path: "/bridal" },
         { id: "pricing", label: "Pricing", path: "/pricing" },
         { id: "about-us", label: "About Us", path: "/about" },

@@ -1,16 +1,20 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
+import { TextGenerateEffect } from '../components/ui/Text-Generate-Effect';
+import { ParaGenEffect } from '../components/ui/ParaGen-Effect';
 
 export default function Pricing() {
+  let tagline = "Pricing";
+  let description = "Our Service Rates & Packages";
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] w-full">
         <div className="absolute inset-0 bg-gradient-to-r from-[#6d0000] to-[#8a0000] flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Pricing</h1>
-            <h3 className="text-xl md:text-2xl">Our Service Rates & Packages</h3>
+            <TextGenerateEffect words={tagline} className={"text-4xl md:text-6xl font-bold font-Forum mb-4"} />
+            <ParaGenEffect words={description} className={"text-xl md:text-2xl"} />
           </div>
         </div>
       </section>
