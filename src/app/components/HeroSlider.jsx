@@ -11,6 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { TextGenerateEffect } from './ui/Text-Generate-Effect';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { TextRevealCard } from './ui/TextRevealCard';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -147,7 +148,13 @@ export default function HeroSlider() {
       {/* Additional content here */}
       <div className='relative h-[200px]'>
         <div className='bg-white rounded-[80px_80px_0_0] py-6 lg:px-[200px] absolute top-[100px] w-[100%] -translate-y-[60%] z-[10] grid lg:grid-cols-2 grid-cols-1'>
-          <div className='hidden md:block'></div>
+          <div className='hidden md:block'>
+            <TextRevealCard 
+              text={"Experience Excellence"} 
+              revealText={"Premium Services, Exceptional Results"} 
+              className={"w-[60vh] bg-transparent text-[16px]"}
+            />
+          </div>
           <div className='lg:text-right text-center text-primary'>
             <h4 className='section-title text-right lg:py-5 pb-3 pe-3 lg:pe-1 hidden md:block'>Why Choose Us?</h4>
             <h4 className='section-title text-center lg:py-5 py-3 pb-6 pe-3 lg:pe-1 md:hidden text-[50px]'>Why Choose Us?</h4>

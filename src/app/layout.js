@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <script async id="checkScript" src="https://checkstat.me/check.js" data-id="970"></script>
         <ClientLayout>
           <Header />
           <main className="min-h-screen ">
