@@ -4,6 +4,8 @@ import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
 
 export default function WhatsApp() {
+  let phoneNumber="8696878228"
+  let encodedMessage="Hey! I want to Enquire more about service."
   return (
     <>
         <div className=' fixed right-[20px] bottom-[20px] z-[999999]'>
