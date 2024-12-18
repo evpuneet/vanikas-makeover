@@ -147,11 +147,11 @@ export default function HeroSlider() {
       </div>
       {/* Additional content here */}
       <div className='relative h-[200px]'>
-        <div className='bg-white rounded-[80px_80px_0_0] py-6 lg:px-[200px] absolute top-[100px] w-[100%] -translate-y-[60%] z-[10] grid lg:grid-cols-2 grid-cols-1'>
-          <div className='hidden md:block'>
+        <div className='bg-white rounded-[80px_80px_0_0] py-5 lg:px-[200px] absolute top-[100px] w-[100%] -translate-y-[60%] z-[10] grid lg:grid-cols-2 grid-cols-1'>
+          <div className='hidden md:block w-full'>
             <TextRevealCard 
-              text={"Experience Excellence"} 
-              revealText={"Premium Services, Exceptional Results"} 
+              text={"Experience"} 
+              revealText={"Unmatched"} 
               className={"w-[60vh] bg-transparent text-[16px]"}
             />
           </div>

@@ -14,12 +14,23 @@ module.exports = {
     extend: {
       animation: {
         move: "move 5s linear infinite",
+        bounce2: "bounce2 0.3s linear 1",
       },
       keyframes: {
         move: {
           "0%": { transform: "translateX(-200px)" },
           "100%": { transform: "translateX(200px)" },
         },
+        bounce2: {
+          "0%": {
+            transform: "translateY(-15%)",
+            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            animationTimingFunction: "cubic-bezier(0, 0.2, 0, 0)",
+          }
+        }
       },
       fontFamily: {
         Forum: ['Forum', 'sans-serif'],
